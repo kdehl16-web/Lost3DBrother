@@ -3,7 +3,7 @@ short-name: bob
 full-name: Bob-Omb Battlefield
 texture-file: ["/texture.inc.c"]
 area-count: 1
-objects: [chain_chomp_gate, grate_door, seesaw_platform]
+objects: [grate_door, seesaw_platform]
 shared-path: []
 # loaded files
 skybox-bin: wdw
