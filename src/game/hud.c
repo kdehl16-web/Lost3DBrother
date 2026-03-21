@@ -291,7 +291,7 @@ void render_hud_power_meter(void) {
  */
 void render_hud_mario_lives(void) {
     print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(22), HUD_TOP_Y, ","); // 'Mario Head' glyph
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(41), HUD_TOP_Y, "%02d", gHudDisplay.lives);
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(41), HUD_TOP_Y, "%03d", gHudDisplay.lives);
 }
 
 /**
@@ -300,7 +300,7 @@ void render_hud_mario_lives(void) {
 void render_hud_coins(void) {
     print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(22), COIN_Y, "+"); // 'Coin' glyph
     print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(38), COIN_Y, "*"); // 'X' glyph
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(52), COIN_Y, "%02d", gHudDisplay.coins);
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(52), COIN_Y, "%03d", gHudDisplay.coins);
 }
 
 #define HUD_STARS_X 297
@@ -318,7 +318,7 @@ void render_hud_stars(void) {
     }
 
     print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_STARS_X), STAR_Y, "-"); // 'Star' glyph
-    print_text_fmt_int((showX * 14) + GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_STARS_X - 18), STAR_Y, "%02d", gHudDisplay.stars);
+    print_text_fmt_int((showX * 14) + GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_STARS_X - 18), STAR_Y, "%03d", gHudDisplay.stars);
 }
 
 /**
